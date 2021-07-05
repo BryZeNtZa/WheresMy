@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Where\'s My...</string>
+    <string name="title_activity_wheres_my_motto">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="find_here">Retrouvez ici</string>
+    <string name="all_your_lost_things">Tous vos objets et documents égarés</string>
+    <string name="as_well_as">Et même...</string>
+    <string name="and_your_missing_ones">Vos bienaimés portés disparu</string>
+    <string name="i_got_it">Compris !</string>
+    <string name="search">rechercher...</string>
+    <string name="search_go">Chercher !</string>
+</resources>
