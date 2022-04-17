@@ -2,7 +2,7 @@
 <resources>
     <color name="colorPrimary">#0a03a3</color>
     <color name="colorPrimaryDark">#FFC000</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#FFEBAD</color>
     <color name="colorText">#ffffff</color>
     <color name="icActive">#FFFFFFFF</color>
     <color name="icFocused">#DDFFFFFF</color>

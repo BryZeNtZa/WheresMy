@@ -6,129 +6,118 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/wheres_my_logo"
-        android:clickable="true"
-        android:onClick="gotoCamera"
-        android:padding="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="60dp"
+        android:background="@drawable/main_navbar_bottom"
+        android:clickable="false"
         android:orientation="horizontal"
-        android:padding="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView">
+        android:paddingTop="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="@drawable/search_layout_left"
-            android:orientation="horizontal"
-            tools:layout_conversion_absoluteHeight="60dp"
-            tools:layout_conversion_absoluteWidth="392dp"
-            tools:layout_editor_absoluteX="10dp"
-            tools:layout_editor_absoluteY="215dp">
+            android:layout_weight="0.5"
+            android:background="@drawable/wsmy_main_btn"
+            android:clickable="true"
+            android:onClick="gotoWsMyActivity">
 
-            <EditText
-                android:id="@+id/textView"
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                app:srcCompat="@drawable/wsmy" />
+
+            <TextView
+                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:background="@null"
+                android:layout_weight="0.5"
                 android:gravity="center_vertical"
-                android:hint="@string/search"
-                android:imeActionLabel="@string/search_go"
-                android:imeOptions="actionSearch"
-                android:inputType="text"
-                android:maxLines="1"
-                android:paddingLeft="15dp"
-                android:textColor="@color/colorPrimary"
-                android:textSize="18sp" />
+                android:text="Wheres my"
+                android:textColor="@color/colorPrimaryDark" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_gravity="right"
-            android:layout_weight="0"
-            android:background="@drawable/search_layout_right"
-            android:gravity="right"
-            android:orientation="horizontal"
-            tools:layout_conversion_absoluteHeight="60dp"
-            tools:layout_conversion_absoluteWidth="392dp"
-            tools:layout_editor_absoluteX="10dp"
-            tools:layout_editor_absoluteY="215dp">
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:background="@drawable/this_your_main_btn"
+            android:clickable="true"
+            android:onClick="gotoWsMyActivity">
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="50dp"
+                android:id="@+id/imageView10"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:layout_weight="1"
+                android:paddingTop="8dp"
+                app:srcCompat="@drawable/icon_this_is_your" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_gravity="right"
-                android:layout_weight="0"
-                android:clickable="true"
-                android:padding="5dp"
-                app:srcCompat="@drawable/help" />
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="This is your"
+                android:textColor="@color/colorPrimary" />
+
         </LinearLayout>
     </LinearLayout>
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/dashboardTopNavBar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="200dp"
-        android:layout_weight="1"
-        android:padding="10dp"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_height="54dp"
+        android:background="@drawable/main_navbar_top"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/wheres_my_text" />
+        app:srcCompat="@drawable/where_s_my_and_logo" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="92dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="2dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7"
-        app:srcCompat="@drawable/i_lost" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/user_icon" />
 
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="409dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="10dp"
-        android:gravity="center_horizontal"
-        android:text="@string/i_found"
-        android:textAlignment="center"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="56dp"
+        android:clickable="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:text="@string/i_lost"
-        android:textAlignment="textEnd"
-        android:textColor="@color/colorPrimary"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_see_notifications" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

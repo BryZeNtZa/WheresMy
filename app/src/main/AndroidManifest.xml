@@ -15,7 +15,9 @@
         android:roundIcon="@mipmap/app_icon_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ThisIsYour"></activity>
+        <activity android:name=".WheresMy" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".CameraActivity"
             android:clearTaskOnLaunch="true"

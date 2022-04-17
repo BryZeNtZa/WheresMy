@@ -20,11 +20,16 @@ class MainActivity : AppCompatActivity() {
 
         window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
         window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
-        window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimary)
+        window.statusBarColor = ContextCompat.getColor(this, R.color.colorPrimaryDark)
     }
 
     fun gotoCamera(view: View) {
         val intent = Intent(this, CameraActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun gotoWsMyActivity(view: View) {
+        val intent = Intent(this, WheresMy::class.java)
         startActivity(intent)
     }
 
